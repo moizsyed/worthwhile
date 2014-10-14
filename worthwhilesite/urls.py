@@ -1,5 +1,7 @@
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = patterns('',
     # Examples:
@@ -17,5 +19,6 @@ urlpatterns = patterns('',
         r'^blog/category/(?P<slug>[^\.]+)',
         'blog.views.view_category',
         name='view_blog_category'),
-)
+) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
+# TAKE STATIC LINE OUT BEFORE PRODUCTION!

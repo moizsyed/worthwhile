@@ -1,4 +1,122 @@
 @import "variables.scss";
+
 body {
-  background-color: $color-black;
+  color: $color-dark-blue;
+  font-family: $font;
+  line-height: 30px;
 }
+
+header {
+  position: fixed;
+  height: 20px;
+  width: 100%;
+  background-color: $color-dark-blue;
+  padding:20px 0;
+  transition: all 0.4s ease;
+
+  ul {
+    display: table;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    li {
+      text-align: center;
+      a {
+        font-size: .9em;
+        text-decoration: none;
+        color: $color-grey;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      &:nth-child(3) a {
+        display: block;
+        background-image: url(/static/fist.svg);
+        background-repeat: no-repeat;
+        background-size: 36px auto;
+        width: 40px;
+        height: 40px;
+        margin: -9px auto;
+      }
+    }
+  }
+}
+
+.header-big {
+  height: 100px;
+  position: relative;
+}
+
+.wordmark {
+  width: 268px;
+  height: auto;
+  margin: 30px auto;
+  display: block;
+}
+
+.header-triangle {
+  background-image: url(/static/triangle.svg);
+  width: 100%;
+  height: 80px;
+  background-size: 100% 100%;
+}
+
+.triangle {
+  height: 3.33334em;
+  width: 100%;
+  fill: $color-dark-blue;
+  display: block;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2em;
+
+  a {
+    color: $color-red;
+    text-decoration: underline;
+  }
+}
+
+.post-content {
+  padding-top: 40px;
+  padding-bottom: 80px;
+
+  .side-content {
+    border-top: 3px solid $color-red;
+    padding-top: 20px;
+  }
+
+  .date {
+    margin-bottom: 40px;
+    font-style: italic;
+  }
+
+  .source {
+    .title {
+      display: block;
+      color: $color-grey;
+      font-size: .9em;
+    }
+
+    a{
+      font-style: italic;
+    }
+  }
+
+  h1 {
+    margin-top: 0em;
+
+    a {
+      text-decoration: none;
+      color: $color-dark-blue;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
+

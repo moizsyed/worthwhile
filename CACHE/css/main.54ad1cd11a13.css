@@ -1,0 +1,8 @@
+body {
+  color: #152241; }
+
+.header {
+  height: 100px; }
+  .header li {
+    display: table-cell;
+    text-align: center; }

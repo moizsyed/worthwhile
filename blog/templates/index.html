@@ -1,27 +1,33 @@
 {% extends 'base.html' %}
-{% block title %}Welcome to my blog{% endblock %}
-
+{% load django_markdown %}
 {% block content %}
-    <h2>Categories</h2>
-    {% if categories %}
-        <ul>
-        {% for category in categories %}
-            <li><a href="{{ category.get_absolute_url }}">{{ category.title }}</a></li>
-        {% endfor %}
-        </ul>
-    {% else %}
-        <p>There are no posts.</p>
-    {% endif %}
 
-    <h2>Posts</h2>
     {% if posts %}
-        <ul>
         {% for post in posts %}
-            <li><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></li>
+            <div class="post-content col-lg-15">
+                {% ifchanged %}
+                <div class="main-content col-lg-10 col-lg-offset-3 date">
+                    {{ post.created|date:"F d, Y" }}
+                </div>
+                {% endifchanged %}
+
+                <div class="side-content source col-lg-3">
+                    {% if post.source %}
+                        <span class="title">Source</span>
+                        <a href={{ post.source.link }}>{{ post.source.name }}</a>
+                    {% endif %}
+                </div>
+
+                <div class="main-content col-lg-10">
+                    <span class="title"><h1><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h1></span>
+                    {{ post.body|markdown }}
+                    <br />
+                    {{ post.category }}
+                </div>
+            </div>
         {% endfor %}
-        </ul>
     {% else %}
-        <p>There are no posts.</p>
+        <p class="col-lg-10">There are no posts.</p>
     {% endif %}
 
 {% endblock %}

@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
 {% load django_markdown %}
 {% block head_title %}{{ post.title }}{% endblock %}
-{% block title %}{{ post.title }}{% endblock %}
 
 {% block content %}
+    {{ post.title }}
     {{ post.created|date:"F d, Y" }}
     <a href={{ post.source.link }}>{{ post.source.name }}</a>
     {{ post.body|markdown }}

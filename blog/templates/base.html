@@ -2,15 +2,51 @@
     <head>
         {% load compress %}
         {% load staticfiles %}
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         {% compress css %}
+          <link rel="stylesheet" type="text/css" href="{% static "blog/css/bootstrap.min.css" %}" />
           <link rel="stylesheet" type="text/x-scss" href="{% static "blog/css/main.scss" %}" />
         {% endcompress %}
-        <title>{% block head_title %}Welcome to my blog{% endblock %}</title>
+
+        <title>{% block head_title %}The Worthwhile{% endblock %}</title>
+
     </head>
     <body>
-        <h1>{% block title %}Welcome to my block{% endblock %}</h1>
-        {% block content %}
+          <header class="header header-big">
+            <ul>
+              <li class="col-lg-3"><a href="/">Organizations</a></li>
+              <li class="col-lg-3"><a href="/">Wiki</a></li>
+              <li class="col-lg-3"><a href="/"></a></li>
+              <li class="col-lg-3"><a href="/">Events</a></li>
+              <li class="col-lg-3"><a href="/">Donate</a></li>
+            </ul>
+            <a href="/"><img class="wordmark" src="/static/logo-wordmark.svg" /></a>
+          </header>
+          <div class="header-triangle"></div>
 
-        {% endblock %}
+        <div class="content">
+          {% block content %}
+
+          {% endblock %}
+        </div>
     </body>
+
+    <!-- import jQuery
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script>
+      $(window).scroll(function() {
+        if ($(this).scrollTop() > 1){
+          $('header').removeClass("header-big");
+          $('.wordmark').hide();
+        }
+        else{
+          $('header').addClass("header-big");
+          $('.wordmark').show();
+        }
+      });
+    </script>
+
+    -->
+
 </html>

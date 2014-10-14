@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="40px" height="44px" viewBox="0 0 40 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1 (8751) - http://www.bohemiancoding.com/sketch -->
+    <title>Fist</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-HD" sketch:type="MSArtboardGroup" transform="translate(-683.000000, -32.000000)" fill="#FF4E50">
+            <g id="Header" sketch:type="MSLayerGroup" transform="translate(0.000000, -48.000000)">
+                <g id="Fist" transform="translate(684.000000, 81.000000)" sketch:type="MSShapeGroup">
+                    <rect id="Rectangle-20" x="7.45800866" y="3.33878592" width="20.9756494" height="35.7442931" rx="2"></rect>
+                    <rect id="Rectangle-15" stroke="#142241" x="0" y="0" width="9.29166667" height="17.813005" rx="2"></rect>
+                    <rect id="Rectangle-16" stroke="#142241" x="8.86666667" y="0" width="9.29166667" height="17.813005" rx="2"></rect>
+                    <rect id="Rectangle-17" stroke="#142241" x="17.7333333" y="0" width="9.29166667" height="17.813005" rx="2"></rect>
+                    <rect id="Rectangle-18" stroke="#142241" x="26.6" y="0" width="9.29166667" height="17.813005" rx="2"></rect>
+                    <path d="M37.2404751,15.5526899 C37.2404751,14.4476166 36.3449179,13.5517777 35.2317231,13.5517777 L21.4362221,13.5517777 C20.326819,13.5517777 19.4274701,14.4461061 19.4274701,15.5526899 L19.4274701,20.8780364 C19.4274701,21.9831096 20.3230273,22.8789485 21.4362221,22.8789485 L35.2317231,22.8789485 C36.3411262,22.8789485 37.2404751,21.9846202 37.2404751,20.8780364 L37.2404751,15.5526899 Z" id="Rectangle-19" stroke="#142241"></path>
+                    <path d="M4.57700702,25.1551708 C4.0286184,25.1455987 3.5938192,25.5845915 3.60609483,26.1466312 L3.94134564,41.4960902 C3.95351427,42.0532308 4.41354137,42.4368735 4.94768361,42.3561772 L27.698994,38.9189882 C28.2426105,38.8368605 28.6909591,38.3314175 28.700604,37.7788653 L28.8962313,26.5713841 C28.9057887,26.0238393 28.4738961,25.5722926 27.9205911,25.5626346 L4.57700702,25.1551708 Z" id="Rectangle-19"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
